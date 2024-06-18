@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Choco pap</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="chocpap.js" async></script>
+</head>
+
+<body>
+    <!-- HEADER-->
+    <div id="header">
+        <div id="header-logo">
+            <img src="images/logo.png" alt="logo" width="70" height="70">
+        </div>
+        <div id="header-right">
+            <div class="text-style1">
+                <p><a href="index.html">Accueil</a></p>
+            </div>
+            <div class="text-style1">
+                <p><a href="boutique.html">Boutique</a></p>
+            </div>
+            <div class="panier">
+                <img src="images/panier.png" alt="panier" width="70" height="70">
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <!-- FILTRES -->
+        <div id="filter">
+            <div class="text-style3">Cat&eacute;gories</div>
+            <div class="zone-filtre">
+                <div>
+                    <input type="checkbox" id="ch-all">
+                    <label for="ch-all" class="text-style4">Tous</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="ch-chocolat-blanc">
+                    <label for="ch-chocolat-blanc" class="text-style4">Chocolat blanc</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="ch-chocolat-lait">
+                    <label for="ch-chocolat-lait" class="text-style4">Chocolat au lait</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="ch-chocolat-noir">
+                    <label for="ch-chocolat-noir" class="text-style4">Chocolat noir</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="ch-noix">
+                    <label for="ch-noix" class="text-style4">Noix/Noisette</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="ch-fruit">
+                    <label for="ch-fruit" class="text-style4">Fruit</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="ch-caramel">
+                    <label for="ch-caramel" class="text-style4">Caramel</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="ch-liqueur">
+                    <label for="ch-liqueur" class="text-style4">Liqueur</label>
+                </div>
+            </div>
+            <div class="text-style3">Prix</div>
+            <div class="zone-filtre">
+                <div>
+                    <div>
+                        <span class="text-style4">Prix min</span>
+                        <input type="number" id="prix-min">
+                    </div>
+                    <div>
+                        <span class="text-style4">Prix max</span>
+                        <input type="number" id="prix-max">
+                    </div>
+                </div>
+            </div>
+            <div class="text-style3">Notes</div>
+            <div class="zone-filtre">
+                <div>
+                    <div>
+                        <span class="text-style4">Note min</span>
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div>
+                        <span class="text-style4">Note max</span>
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+           
+    </div>
+ <section> 
+    <h1>Boutique</h1>
+            <div class="boutiquechocolat">
+                <article>
+                    <img src="images/produit1.jpg" alt="produit1" width="300" height="300">
+                    <div class="text-style1" style="margin-top: 10px">Cerisier</div>
+                    <div class="text-style3" style="margin-top: 10px"> Prix: 2.99€</div>
+                    <div class="text-style3" style="margin-top: 10px">Note: 5</div>
+                    <div class="text-style2" style="margin-left: 10px; margin-top: 10px">AJOUTER AU PANIER</div>
+                </article>
+                <!-- TODO : Ajouter les produits de façon dynamique-->
+            </div>
+            <div>
+                <article>
+                    <img src="images/produit2.jpg" alt="produit1" width="100" height="100">
+                    <div class="text-style1" style="margin-top: 10px">Coulis Caramel</div>
+                    <div class="text-style3" style="margin-top: 10px"> Prix: 13.99€</div>
+                    <div class="text-style3" style="margin-top: 10px">Note: 3</div>
+                    <div class="text-style2" style="margin-left: 10px; margin-top: 10px">AJOUTER AU PANIER</div>
+                </article>
+                <!-- TODO : Ajouter les produits de façon dynamique-->
+            </div>
+            <div>
+                <article>
+                    <img src="images/produit3.jpg" alt="produit1" width="300" height="300">
+                    <div class="text-style1" style="margin-top: 10px"> Douceur Exotique</div>
+                    <div class="text-style3" style="margin-top: 10px"> Prix: 4.99€</div>
+                    <div class="text-style3" style="margin-top: 10px">Note: 4</div>
+                    <div class="text-style2" style="margin-left: 10px; margin-top: 10px">AJOUTER AU PANIER</div>
+                </article>
+                <!-- TODO : Ajouter les produits de façon dynamique-->
+            </div>
+            <div>
+                <article>
+                    <img src="images/produit4.jpg" alt="produit1" width="300" height="300">
+                    <div class="text-style1" style="margin-top: 10px">Blanc Passion</div>
+                    <div class="text-style3" style="margin-top: 10px"> Prix: 5.99€</div>
+                    <div class="text-style3" style="margin-top: 10px">Note: 5</div>
+                    <div class="text-style2" style="margin-left: 10px; margin-top: 10px">AJOUTER AU PANIER</div>
+                </article>
+                <!-- TODO : Ajouter les produits de façon dynamique-->
+            </div>
+            <div>
+                <article>
+                    <img src="images/produit5.jpg" alt="produit1" width="300" height="300">
+                    <div class="text-style1" style="margin-top: 10px">Douceur Croquante</div>
+                    <div class="text-style3" style="margin-top: 10px"> Prix: 2.99€</div>
+                    <div class="text-style3" style="margin-top: 10px">Note: 3</div>
+                    <div class="text-style2" style="margin-left: 10px; margin-top: 10px">AJOUTER AU PANIER</div>
+                </article>
+                <!-- TODO : Ajouter les produits de façon dynamique-->
+            </div>
+            <div>
+                <article>
+                    <img src="images/produit6.jpg" alt="produit1" width="300" height="300">
+                    <div class="text-style1" style="margin-top: 10px">Le Zèbre</div>
+                    <div class="text-style3" style="margin-top: 10px"> Prix: 19.99€</div>
+                    <div class="text-style3" style="margin-top: 10px">Note: 4</div>
+                    <div class="text-style2" style="margin-left: 10px; margin-top: 10px">AJOUTER AU PANIER</div>
+                </article>
+                <!-- TODO : Ajouter les produits de façon dynamique-->
+            </div>
+            <div>
+                <article>
+                    <img src="images/produit7.jpg" alt="produit1" width="300" height="300">
+                    <div class="text-style1" style="margin-top: 10px">Coulis Fraise</div>
+                    <div class="text-style3" style="margin-top: 10px"> Prix: 9.99€</div>
+                    <div class="text-style3" style="margin-top: 10px">Note: 4</div>
+                    <div class="text-style2" style="margin-left: 10px; margin-top: 10px">AJOUTER AU PANIER</div>
+                </article>
+                <!-- TODO : Ajouter les produits de façon dynamique-->
+            </div>
+            <div>
+                <article>
+                    <img src="images/produit8.jpg" alt="produit1" width="300" height="300">
+                    <div class="text-style1" style="margin-top: 10px">Noir Passion</div>
+                    <div class="text-style3" style="margin-top: 10px"> Prix: 4.99€</div>
+                    <div class="text-style3" style="margin-top: 10px">Note: 5</div>
+                    <div class="text-style2" style="margin-left: 10px; margin-top: 10px">AJOUTER AU PANIER</div>
+                </article>
+                <!-- TODO : Ajouter les produits de façon dynamique-->
+            </div>
+            <div>
+                <article>
+                    <img src="images/produit9.jpg" alt="produit1" width="300" height="300">
+                    <div class="text-style1" style="margin-top: 10px">Fantaisie</div>
+                    <div class="text-style3" style="margin-top: 10px"> Prix: 2.99 €</div>
+                    <div class="text-style3" style="margin-top: 10px">Note: 5</div>
+                    <div class="text-style2" style="margin-left: 10px; margin-top: 10px">AJOUTER AU PANIER</div>
+                </article>
+                <!-- TODO : Ajouter les produits de façon dynamique-->
+            </div>
+            <div>
+                <article>
+                    <img src="images/produit10.jpg" alt="produit1" width="300" height="300">
+                    <div class="text-style1" style="margin-top: 10px">Caramel Salé</div>
+                    <div class="text-style3" style="margin-top: 10px"> Prix: 14.99€</div>
+                    <div class="text-style3" style="margin-top: 10px">Note: 4</div>
+                    <div class="text-style2" style="margin-left: 10px; margin-top: 10px">AJOUTER AU PANIER</div>
+                </article>
+                <!-- TODO : Ajouter les produits de façon dynamique-->
+            </div>
+        </div>
+</section>
+
+    <!-- FOOTER -->
+    <div id="footer">
+        <div id="informations">
+            <div class="text-style3">Choco pap</div>
+            <div class="text-style4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua</div>
+        </div>
+        <div id="contact">
+            <div class="text-style3">Contact</div>
+            <div class="text-style4">Adresse : 51 rue du chocolat 75000 Paris Téléphone: 01 23 45 67 89
+                Horaires: 9h00-17h00 du Lundi au vendredi</div>
+        </div>
+        <div id="social-network">
+            <div><img src="images/logo-facebook.png" width="40" height="40" alt="facebook"></div>
+            <div><img src="images/logo-instagram.jpeg" width="40" height="40" alt="instagram"></div>
+            <div><img src="images/logo-twitter.png" width="40" height="40" alt="twitter"></div>
+        </div>
+    </div>
+</body>
+
+</html>
