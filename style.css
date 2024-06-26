@@ -251,7 +251,10 @@ body {
     /* Border de 10px pour les points inactifs */
     border: 10px solid #313334;
 }
+.boutiquechocolat {
 
+    flex-direction: row;
+}
 
 @media only screen and (max-width: 600px) {
     #footer {

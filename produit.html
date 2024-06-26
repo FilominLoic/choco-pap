@@ -1,62 +1,75 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <title>Choco pap</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <!-- TODO: Rendre la fiche produit dynamique -->
-        <!-- HEADER-->
-        <div id="header">
-            <div id="header-logo">
-                <img src="images/logo.png" alt="logo" width="70" height="70">
-            </div>
-            <div id="header-right">
-                <div class="text-style1">
-                    <p><a href="index.html">Accueil</a></p>
-                </div>
-                <div class="text-style1">
-                    <p><a href="boutique.html">Boutique</a></p>
-                </div>
-                <div class="panier">
-                    <img src="images/panier.png" alt="panier" width="70" height="70">
-                </div>
-            </div>
-        </div>
 
-        <div class="content">
-            <div>
-                <img src="images/produit1.jpg" alt="produit1" width="300" height="300">
+<head>
+    <title>Choco pap</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- TODO: Rendre la fiche produit dynamique -->
+    <!-- HEADER-->
+    <div id="header">
+        <div id="header-logo">
+            <img src="images/logo.png" alt="logo" width="70" height="70">
+        </div>
+        <div id="header-right">
+            <div class="text-style1">
+                <p><a href="index.html">Accueil</a></p>
             </div>
-            <div class="table">
-                <div class="text-style1" style="margin-top: 10px">Nom produit</div>
-                <div class="text-style3" style="margin-top: 10px">XX €</div>
-                <div class="text-style4" style="margin-top: 10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-                <input type="number" id="qte" value="1">
-                <div class="text-style2" style="margin-left: 10px; margin-top: 10px">AJOUTER AU PANIER</div>
+            <div class="text-style1">
+                <p><a href="boutique.html">Boutique</a></p>
+            </div>
+            <div class="panier">
+                <img src="images/panier.png" alt="panier" width="70" height="70"><span>0</span>
             </div>
         </div>
-        <div class="content table">
-            <div class="text-style1">Ingrédients</div>
-            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+    </div>
+
+    <div class="content">
+        <div>
+            <img src="images/produit1.jpg" alt="produit1" width="300" height="300">
         </div>
-        
-  <!-- FOOTER -->
-  <div id="footer">
-    <div id="informations">
-        <div class="text-style3">Choco pap</div>
-        <div class="text-style4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+        <div class="table">
+            <div class="text-style1" style="margin-top: 10px">Nom produit</div>
+            <div class="text-style3" style="margin-top: 10px">XX €</div>
+            <div class="text-style4" style="margin-top: 10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+            <input type="number" id="qte" value="1">
+            <div class="text-style2" style="margin-left: 10px; margin-top: 10px">AJOUTER AU PANIER</div>
+        </div>
     </div>
-    <div id="contact">
-        <div class="text-style3">Contact</div>
-        <div class="text-style4">Adresse : 51 rue du chocolat 75000 Paris Téléphone: 01 23 45 67 89
-            Horaires: 9h00-17h00 du Lundi au vendredi</div>
+    <div class="content table">
+        <div class="text-style1">Ingrédients</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur.</div>
     </div>
-    <div id="social-network">
-        <div><img src="images/logo-facebook.png" width="40" height="40" alt="facebook"></div>
-        <div><img src="images/logo-instagram.jpeg" width="40" height="40" alt="instagram"></div>
-        <div><img src="images/logo-twitter.png" width="40" height="40" alt="twitter"></div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+        <div id="informations">
+            <div class="text-style3">Choco pap</div>
+            <div class="text-style4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua</div>
+        </div>
+        <div id="contact">
+            <div class="text-style3">Contact</div>
+            <div class="text-style4">Adresse : 51 rue du chocolat 75000 Paris Téléphone: 01 23 45 67 89
+                Horaires: 9h00-17h00 du Lundi au vendredi</div>
+        </div>
+        <div id="social-network">
+            <div><img src="images/logo-facebook.png" width="40" height="40" alt="facebook"></div>
+            <div><img src="images/logo-instagram.jpeg" width="40" height="40" alt="instagram"></div>
+            <div><img src="images/logo-twitter.png" width="40" height="40" alt="twitter"></div>
+        </div>
     </div>
-</div>
-    </body>
+    <script src="menu.js"></script>
+</body>
+
 </html>
