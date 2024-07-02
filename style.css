@@ -13,6 +13,93 @@ body {
 .content {
     background-color: #FFFFFF;
 }
+#produits{
+    display:flex;
+    height: 30rem;
+    width: auto;
+}
+.articleDiv{
+    margin: 1rem;
+}
+.articleDiv h2, p{
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+}
+
+.butonajoute{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #FFD543;
+    border-radius:30% ;
+}
+
+.imageproduit{
+    width: 11rem ;
+    height:auto;
+}
+
+#closelist {
+    background: transparent;
+    border: transparent;
+    top: 1rem;
+    left: 1rem;
+    position: relative;
+
+}
+.listshopping {
+    position: absolute;
+    top: 7rem;
+    width: 500px;
+    background-color:#2C1E1E;
+    left: calc(100% - 500px);
+    transition: 0.5s;
+    height: 100vh;
+  
+
+}
+.headpanier{
+    background-color:#FFD543;
+}
+
+
+.headpanier h1 {
+    margin: 0rem;
+    align-items: center;
+    text-align: center;
+    display: flex;
+justify-content: center;
+margin: 1rem;}
+.checkout{
+    background-color: #FFD543;
+    bottom:0;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.submitpanier, .resetpanier, .total {
+    margin-bottom: 1rem;  
+    font-size: x-large;
+}
+.total{
+    margin-top: 1rem;
+    font-weight: 400;
+  
+}
+.submitpanier, .resetpanier{
+    height: auto;
+   
+}
+.reset, .submit {
+    font-size: x-large;
+    font-family: 'Fjalla One';
+    background-color: #B65F28;
+
+}
 
 #header,
 #footer,
@@ -50,12 +137,17 @@ body {
     position: absolute;
 }
 
-.panier {
+#panier {
     position: relative;
 }
+.hide{
+visibility: hidden;
+}
+.show{
+    visibility: visible;
 
-
-.panier span {
+}
+#panier span {
     background-color: red;
     color: #FFFFFF;
     border-radius: 50%;
@@ -251,6 +343,7 @@ body {
     /* Border de 10px pour les points inactifs */
     border: 10px solid #313334;
 }
+
 .boutiquechocolat {
 
     flex-direction: row;
@@ -270,15 +363,11 @@ body {
 
     }
 
-    #header-right,
-    #social-network {
-        display: flex;
-  
-
-    }
-
     #header-right {
-        position: absolute;
+        display: flex;
+        position: relative;
+        top: 7rem;
+        right: 28rem;
         flex-direction: column;
         background-color: #B65F28;
     }
@@ -309,15 +398,11 @@ body {
 
     }
 
-    #header-right,
-    #social-network {
-        display: flex;
-        
-
-    }
-
     #header-right {
-        position: absolute;
+        display: flex;
+        position: relative;
+        top: 7rem;
+        right: 39rem;
         flex-direction: column;
         background-color: #B65F28;
     }

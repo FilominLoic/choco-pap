@@ -9,7 +9,7 @@
 
 </head>
 
-<body>
+<body id="body">
     <!-- HEADER-->
     <div id="header">
         <div id="header-logo">
@@ -22,8 +22,8 @@
             <div class="text-style1">
                 <p><a href="boutique.html">Boutique</a></p>
             </div>
-            <div class="panier">
-                <img src="images/panier.png" alt="panier" width="70" height="70"><span>0</span>
+            <div id="panier">
+                <img src="images/panier.png" alt="panier" width="70" height="70"><span id="quantity">0</span>
             </div>
         </div>
     </div>
@@ -109,10 +109,27 @@
             </div>
 
         </div>
-            <h1>Boutique</h1>
-            <div class="boutiquechocolat">
-                <!-- TODO : Ajouter les produits de façon dynamique-->
+        <div id="boutiquechocolat">
+         
+            <div id="produits">
+ <!-- TODO : Ajouter les produits de façon dynamique-->
             </div>
+           
+        </div>
+        <div id="listshopping" class="listshopping">
+            <div class="headpanier">
+                <button id="closelist"><img class="iconclose" src="/images/icons8-close-30.png"
+                        alt="Ouvrir ou fermer le menu" /></button>
+                <h1>Panier</h1>
+            </div>
+            <div id="list"></div>
+            <ul id="listproduit"></ul>
+            <div class="checkout">
+                <div id="total">Total:<span>0</span></div>
+                <div class="resetpanier"> <button class="reset" type="reset">Réinitialiser le panier</button></div>
+                <div class="submitpanier"><button class="submit" type="submit">Valider le panier</button></div>
+            </div>
+        </div>
     </div>
 
 
@@ -135,8 +152,8 @@
         </div>
     </div>
     <script src="/js/menu.js"></script>
-    <script src="/js/filtre.js"></script>
-    <scripts src="/js/boutique.js"></scripts>
+    <script src="/js/boutique.js"></script>
+    <script src="/js/produits.js"></script>
 </body>
 
 </html>
