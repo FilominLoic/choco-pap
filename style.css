@@ -12,32 +12,61 @@ body {
 
 .content {
     background-color: #FFFFFF;
-}
-#produits{
-    display:flex;
-    height: 30rem;
-    width: auto;
-}
-.articleDiv{
-    margin: 1rem;
-}
-.articleDiv h2, p{
- align-items: center;
- justify-content: center;
- text-align: center;
+    height: 85rem;
 }
 
-.butonajoute{
+#boutiquechocolat {
+    height: auto;
+    width: 67rem;
+}
+
+#boutiquechocolat h1 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: xxx-large;
+    font-family: 'Droid Serif';
+}
+
+#produits {
+    display: flex;
+    height: 30rem;
+    width: auto;
+    flex-wrap: wrap;
+}
+
+.articleDiv {
+    margin: 1rem;
+    border: solid;
+    padding: 1rem;
+    border-radius: 20%;
+    background-color: #2C1E1E;
+    font-family:'Droid Serif';
+    text-align: center;
+}
+
+.articleDiv h2,
+p {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.butonajoute {
     align-items: center;
     justify-content: center;
     text-align: center;
     background-color: #FFD543;
-    border-radius:30% ;
+    border-radius: 30%;
+    height: 3rem;
+    width: 7rem;
+
 }
 
-.imageproduit{
-    width: 11rem ;
-    height:auto;
+.imageproduit {
+    width: 11rem;
+    height: auto;
 }
 
 #closelist {
@@ -48,19 +77,21 @@ body {
     position: relative;
 
 }
+
 .listshopping {
     position: absolute;
     top: 7rem;
     width: 500px;
-    background-color:#2C1E1E;
+    background-color: #2C1E1E;
     left: calc(100% - 500px);
     transition: 0.5s;
     height: 100vh;
-  
+
 
 }
-.headpanier{
-    background-color:#FFD543;
+
+.headpanier {
+    background-color: #FFD543;
 }
 
 
@@ -69,11 +100,13 @@ body {
     align-items: center;
     text-align: center;
     display: flex;
-justify-content: center;
-margin: 1rem;}
-.checkout{
+    justify-content: center;
+    margin: 1rem;
+}
+
+.checkout {
     background-color: #FFD543;
-    bottom:0;
+    bottom: 0;
     position: absolute;
     width: 100%;
     display: flex;
@@ -81,20 +114,28 @@ margin: 1rem;}
     align-items: center;
     justify-content: center;
 }
-.submitpanier, .resetpanier, .total {
-    margin-bottom: 1rem;  
+
+.submitpanier,
+.resetpanier,
+.total {
+    margin-bottom: 1rem;
     font-size: x-large;
 }
-.total{
+
+.total {
     margin-top: 1rem;
     font-weight: 400;
-  
+
 }
-.submitpanier, .resetpanier{
+
+.submitpanier,
+.resetpanier {
     height: auto;
-   
+
 }
-.reset, .submit {
+
+.reset,
+.submit {
     font-size: x-large;
     font-family: 'Fjalla One';
     background-color: #B65F28;
@@ -140,13 +181,16 @@ margin: 1rem;}
 #panier {
     position: relative;
 }
-.hide{
-visibility: hidden;
+
+.hide {
+    visibility: hidden;
 }
-.show{
+
+.show {
     visibility: visible;
 
 }
+
 #panier span {
     background-color: red;
     color: #FFFFFF;

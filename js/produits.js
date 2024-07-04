@@ -17,7 +17,7 @@ function displaytodo(article) {
     articleDiv.appendChild(note)
     let ajoute = document.createElement("button")
     ajoute.classList.add("butonajoute");
-    ajoute.innerText="ajouter dans le panier"
+    ajoute.innerText="Ajouter dans le panier"
     articleDiv.appendChild(ajoute)
     articleDiv.classList.add("articleDiv");
     products.appendChild(articleDiv)
