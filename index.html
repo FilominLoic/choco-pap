@@ -4,7 +4,7 @@
 <head>
     <title>Choco pap</title>
     <link rel="stylesheet" href="style.css">
-    <script src="carrousel.js" async></script>
+   
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
@@ -30,40 +30,42 @@
     </div>
     <button class="menutoggle"><img class="hamburger" src="/images/icons8-menu-64.png"
             alt="Ouvrir ou fermer le menu" /></button>
-
-    <!-- Conteneur principal pour le carrousel -->
-    <div class="container">
-        <!-- Élément carrousel -->
-        <div class="carousel">
-            <!-- Conteneur interne pour les diapositives -->
-            <div class="carousel-inner">
-                <!-- Première diapositive -->
-                <div class="slide">
-                    <!-- Image de la première diapositive -->
-                    <img src="/images/accueil1.jpg" alt="Image 1">
-                </div>
-                <!-- Deuxième diapositive -->
-                <div class="slide">
-                    <!-- Image de la deuxième diapositive -->
-                    <img src="/images/accueil2.jpg" alt="Image 2">
-                </div>
-                <!-- Troisième diapositive -->
-                <div class="slide">
-                    <!-- Image de la troisième diapositive -->
-                    <img src="/images/accueil3.jpg" alt="Image 3">
-                </div>
+ <!-- Conteneur principal pour le carrousel -->
+ <div class="container">
+    <!-- Élément carrousel -->
+    <div class="carousel">
+        <!-- Conteneur interne pour les diapositives -->
+        <div class="carousel-inner">
+            <!-- Première diapositive -->
+            <div class="slide">
+                <!-- Image de la première diapositive -->
+                <img src="images/accueil1.jpg"
+                    alt="Image 1">
             </div>
-            <!-- Conteneur pour les boutons de navigation -->
-            <div class="carousel-controls">
-                <!-- Bouton pour passer à la diapositive précédente -->
-                <button id="prev">Précédent</button>
-                <!-- Bouton pour passer à la diapositive suivante -->
-                <button id="next">Suivant</button>
+            <!-- Deuxième diapositive -->
+            <div class="slide">
+                <!-- Image de la deuxième diapositive -->
+                <img src="images/accueil2.jpg"
+                    alt="Image 2">
             </div>
-            <!-- Conteneur pour les points de navigation -->
-            <div class="carousel-dots"></div>
+            <!-- Troisième diapositive -->
+            <div class="slide">
+                <!-- Image de la troisième diapositive -->
+                <img src="images/accueil3.jpg"
+                    alt="Image 3">
+            </div>
         </div>
+        <!-- Conteneur pour les boutons de navigation -->
+        <div class="carousel-controls">
+            <!-- Bouton pour passer à la diapositive précédente -->
+            <button id="prev">Précédent</button>
+            <!-- Bouton pour passer à la diapositive suivante -->
+            <button id="next">Suivant</button>
+        </div>
+        <!-- Conteneur pour les points de navigation -->
+        <div class="carousel-dots"></div>
     </div>
+</div>
     <!-- TODO: Carrousel à créer -->
     <!--<img src="images/accueil1.jpg" alt="Accueil1">
             <img src="images/accueil2.jpg" alt="Accueil2">
@@ -88,7 +90,8 @@
             <div><img src="images/logo-twitter.png" width="40" height="40" alt="twitter"></div>
         </div>
     </div>
-    <script src="/js/menu.js"></script>
+    <script src="/js/menu.js"></script> 
+    <script src="js/carrousel.js" async></script>
 </body>
 
 </html>

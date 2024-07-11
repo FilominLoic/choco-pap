@@ -22,7 +22,7 @@
         // Boucle sur tous les éléments de type "slide" pour les déplacer
         $slides.forEach($elt => $elt.style.transform = `translateX(-${currentSlide * 100}%)`);
         // Boucle sur tous les "dots" pour mettre à jour la couleur par la classe "active" ou "inactive"
-        $dots.forEach(($elt, key) => $elt.classList = `dot ${key === currentSlide ? 'active' : 'inactive'}`);
+        $dots.forEach(($elt, key) => $elt.classList = `dot ${key === currentSlide? 'active': 'inactive'}`);
     }
     // Fonction pour afficher le prochain slide
     function showSlide() {
