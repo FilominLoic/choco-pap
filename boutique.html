@@ -30,91 +30,77 @@
     <button class="menutoggle"><img class="hamburger" src="/images/icons8-menu-64.png"
             alt="Ouvrir ou fermer le menu" /></button>
 
-
-    <div class="content">
-        <!-- FILTRES -->
-        <div id="filter">
-            <div class="text-style3">Cat&eacute;gories</div>
-            <div class="zone-filtre">
-                <div>
-                    <input type="checkbox" id="ch-all">
-                    <label for="ch-all" class="text-style4">Tous</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="ch-chocolat-blanc">
-                    <label for="ch-chocolat-blanc" class="text-style4">Chocolat blanc</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="ch-chocolat-lait">
-                    <label for="ch-chocolat-lait" class="text-style4">Chocolat au lait</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="ch-chocolat-noir">
-                    <label for="ch-chocolat-noir" class="text-style4">Chocolat noir</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="ch-noix">
-                    <label for="ch-noix" class="text-style4">Noix/Noisette</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="ch-fruit">
-                    <label for="ch-fruit" class="text-style4">Fruit</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="ch-caramel">
-                    <label for="ch-caramel" class="text-style4">Caramel</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="ch-liqueur">
-                    <label for="ch-liqueur" class="text-style4">Liqueur</label>
-                </div>
-            </div>
-            <div class="text-style3">Prix</div>
-            <div class="zone-filtre">
-                <div>
-                    <div>
-                        <span class="text-style4">Prix min</span>
-                        <input type="number" id="prix-min">
+            <div class="content">
+                <!-- FILTRES -->
+                <div class="filter">
+                    <div class="text-style3">Catégories</div>
+                    <div class="zone-filtre">
+                        <div class="buttonfiltre">
+                            <input type="checkbox" id="ch-all" class="filter-checkbox">
+                            <label for="ch-all" class="text-style4">Tous</label>
+                        </div>
+                        <div class="buttonfiltre">
+                            <input type="checkbox" id="ch-blanc" class="filter-checkbox">
+                            <label for="ch-blanc" class="text-style4">Chocolat blanc</label>
+                        </div>
+                        <div class="buttonfiltre">
+                            <input type="checkbox" id="ch-lait" class="filter-checkbox">
+                            <label for="ch-lait" class="text-style4">Chocolat au lait</label>
+                        </div>
+                        <div class="buttonfiltre">
+                            <input type="checkbox" id="ch-noir" class="filter-checkbox">
+                            <label for="ch-noir" class="text-style4">Chocolat noir</label>
+                        </div>
+                        <div class="buttonfiltre">
+                            <input type="checkbox" id="ch-noix" class="filter-checkbox">
+                            <label for="ch-noix" class="text-style4">Noix/Noisette</label>
+                        </div>
+                        <div class="buttonfiltre">
+                            <input type="checkbox" id="ch-fruit" class="filter-checkbox">
+                            <label for="ch-fruit" class="text-style4">Fruit</label>
+                        </div>
+                        <div class="buttonfiltre">
+                            <input type="checkbox" id="ch-caramel" class="filter-checkbox">
+                            <label for="ch-caramel" class="text-style4">Caramel</label>
+                        </div>
+                        <div class="buttonfiltre">
+                            <input type="checkbox" id="ch-liqueur" class="filter-checkbox">
+                            <label for="ch-liqueur" class="text-style4">Liqueur</label>
+                        </div>
                     </div>
-                    <div>
-                        <span class="text-style4">Prix max</span>
-                        <input type="number" id="prix-max">
+                    <div class="text-style3">Prix</div>
+                    <div class="zone-filtre">
+                        <div>
+                            <div>
+                                <span class="text-style4">Min :</span>
+                                <input type="number" id="prix-min" class="filter-input">
+                            </div>
+                            <div>
+                                <span class="text-style4">Max :</span>
+                                <input type="number" id="prix-max" class="filter-input">
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="text-style3">Notes</div>
-            <div class="zone-filtre">
-                <div>
-                    <div>
-                        <span class="text-style4">Note min</span>
-                        <select>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                    </div>
-                    <div>
-                        <span class="text-style4">Note max</span>
-                        <select>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
+                    <div class="text-style3">Note</div>
+                    <div class="zone-filtre">
+                        <div>
+                            <div>
+                                <span class="text-style4">Min :</span>
+                                <input type="number" id="note-min" class="filter-input" min="0" max="5" step="0.1">
+                            </div>
+                            <div>
+                                <span class="text-style4">Max :</span>
+                                <input type="number" id="note-max" class="filter-input" min="0" max="5" step="0.1">
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-        </div>
        <div id="boutiquechocolat">
          <h1>Boutique</h1>
             <div id="produits">
  <!-- TODO : Ajouter les produits de façon dynamique-->
             </div>
-           
+              <script src="/js/filtre.js"></script>
         </div>
         <div id="listshopping" class="listshopping">
             <div class="headpanier">
@@ -153,7 +139,9 @@
     </div>
     <script src="/js/menu.js"></script>
     <script src="/js/boutique.js"></script>
-    <script src="/js/produits.js"></script>
+    
+ 
+    
 </body>
 
 </html>

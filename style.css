@@ -14,7 +14,9 @@ body {
     background-color: #FFFFFF;
     height: 85rem;
 }
-
+.articleDiv:hover {
+    transform: translateY(-5px);
+}
 #boutiquechocolat {
     height: auto;
     width: 67rem;
@@ -27,6 +29,14 @@ body {
     font-size: xxx-large;
     font-family: 'Droid Serif';
 }
+    .product {
+        display: block; /* Assurez-vous que tous les produits sont affichés par défaut */
+    }
+
+    .product[style="display: none;"] {
+        display: none ; /* Cacher les produits qui ne correspondent pas aux filtres */
+    }
+    
 
 #produits {
     display: flex;
@@ -67,6 +77,7 @@ p {
 .imageproduit {
     width: 11rem;
     height: auto;
+    border-radius: 20%;
 }
 
 #closelist {

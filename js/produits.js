@@ -1,5 +1,5 @@
 function displaytodo(article) {
- 
+  
     let products = document.getElementById('produits')
     let articleDiv=document.createElement("div")
     let image = document.createElement("img")
@@ -21,7 +21,9 @@ function displaytodo(article) {
     articleDiv.appendChild(ajoute)
     articleDiv.classList.add("articleDiv");
     products.appendChild(articleDiv)
-}
+    
+} 
+
 onload = function () {
     fetch('./products.json')
         .then((reponse) => {
@@ -39,3 +41,4 @@ onload = function () {
             console.error(error);
         });
 }
+
