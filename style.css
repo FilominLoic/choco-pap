@@ -152,6 +152,25 @@ p {
     background-color: #B65F28;
 
 }
+#listproduit li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.quantity-input {
+    width: 50px;
+    margin: 0 10px;
+}
+
+.remove-btn {
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
 
 #header,
 #footer,

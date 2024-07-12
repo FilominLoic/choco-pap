@@ -4,7 +4,7 @@
 <head>
     <title>Choco pap</title>
     <link rel="stylesheet" href="style.css">
-   
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
@@ -24,53 +24,64 @@
                 <p><a href="boutique.html">Boutique</a></p>
             </div>
             <div id="panier">
-                <img src="images/panier.png" alt="panier" width="70" height="70"><span>0</span>
+                <img src="images/panier.png" alt="panier" width="70" height="70"><span id="quantity">0</span>
             </div>
         </div>
     </div>
     <button class="menutoggle"><img class="hamburger" src="/images/icons8-menu-64.png"
             alt="Ouvrir ou fermer le menu" /></button>
- <!-- Conteneur principal pour le carrousel -->
- <div class="container">
-    <!-- Élément carrousel -->
-    <div class="carousel">
-        <!-- Conteneur interne pour les diapositives -->
-        <div class="carousel-inner">
-            <!-- Première diapositive -->
-            <div class="slide">
-                <!-- Image de la première diapositive -->
-                <img src="images/accueil1.jpg"
-                    alt="Image 1">
+    <!-- Conteneur principal pour le carrousel -->
+    <div class="container">
+        <!-- Élément carrousel -->
+        <div class="carousel">
+            <!-- Conteneur interne pour les diapositives -->
+            <div class="carousel-inner">
+                <!-- Première diapositive -->
+                <div class="slide">
+                    <!-- Image de la première diapositive -->
+                    <img src="images/accueil1.jpg" alt="Image 1">
+                </div>
+                <!-- Deuxième diapositive -->
+                <div class="slide">
+                    <!-- Image de la deuxième diapositive -->
+                    <img src="images/accueil2.jpg" alt="Image 2">
+                </div>
+                <!-- Troisième diapositive -->
+                <div class="slide">
+                    <!-- Image de la troisième diapositive -->
+                    <img src="images/accueil3.jpg" alt="Image 3">
+                </div>
             </div>
-            <!-- Deuxième diapositive -->
-            <div class="slide">
-                <!-- Image de la deuxième diapositive -->
-                <img src="images/accueil2.jpg"
-                    alt="Image 2">
+            <!-- Conteneur pour les boutons de navigation -->
+            <div class="carousel-controls">
+                <!-- Bouton pour passer à la diapositive précédente -->
+                <button id="prev">Précédent</button>
+                <!-- Bouton pour passer à la diapositive suivante -->
+                <button id="next">Suivant</button>
             </div>
-            <!-- Troisième diapositive -->
-            <div class="slide">
-                <!-- Image de la troisième diapositive -->
-                <img src="images/accueil3.jpg"
-                    alt="Image 3">
-            </div>
+            <!-- Conteneur pour les points de navigation -->
+            <div class="carousel-dots"></div>
         </div>
-        <!-- Conteneur pour les boutons de navigation -->
-        <div class="carousel-controls">
-            <!-- Bouton pour passer à la diapositive précédente -->
-            <button id="prev">Précédent</button>
-            <!-- Bouton pour passer à la diapositive suivante -->
-            <button id="next">Suivant</button>
-        </div>
-        <!-- Conteneur pour les points de navigation -->
-        <div class="carousel-dots"></div>
     </div>
-</div>
     <!-- TODO: Carrousel à créer -->
     <!--<img src="images/accueil1.jpg" alt="Accueil1">
             <img src="images/accueil2.jpg" alt="Accueil2">
             <img src="images/accueil3.jpg" alt="Accueil3">-->
     <div class="text-style21"><a href="boutique.html">VOIR LA BOUTIQUE</a></div>
+    </div>
+    <div id="listshopping" class="listshopping">
+        <div class="headpanier">
+            <button id="closelist"><img class="iconclose" src="/images/icons8-close-30.png"
+                    alt="Ouvrir ou fermer le menu" /></button>
+            <h1>Panier</h1>
+        </div>
+        <div id="list"></div>
+        <ul id="listproduit"></ul>
+        <div class="checkout">
+            <div id="total">Total:<span>0</span></div>
+            <div class="resetpanier"> <button class="reset" type="reset">Réinitialiser le panier</button></div>
+            <div class="submitpanier"><button class="submit" type="submit">Valider le panier</button></div>
+        </div>
     </div>
     <!-- FOOTER -->
     <div id="footer">
@@ -90,8 +101,10 @@
             <div><img src="images/logo-twitter.png" width="40" height="40" alt="twitter"></div>
         </div>
     </div>
-    <script src="/js/menu.js"></script> 
+    <script src="/js/menu.js"></script>
     <script src="js/carrousel.js" async></script>
+    <script src="/js/boutique.js"></script>
+    <script src="/js/filtre.js"></script>
 </body>
 
 </html>
