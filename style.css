@@ -439,13 +439,14 @@ p {
 
     #header-right {
         display: flex;
-        position: relative;
-        top: 7rem;
-        right: 28rem;
+        position: sticky;
+      
+        right: 15rem;
+  
         flex-direction: column;
         background-color: #B65F28;
+        margin-top: 7rem;
     }
-
     .menutoggle {
         left: 31rem;
         top: 32px;
@@ -454,6 +455,21 @@ p {
     .text-style21 {
         right: 13rem;
     }
+    .listshopping {
+        position: fixed;
+        top: 7rem;
+        width: 568px;
+        background-color: #2C1E1E;
+        transition: 0.5s;
+        height: 85vh;
+    }
+
+.content{
+    height: 240rem;
+}
+.contenttable{
+ background-color: #FFFFFF;
+}
 }
 
 /*Ici ton code css pour les tout petit téléphone en dessous de 600px*/
@@ -494,15 +510,18 @@ p {
         background-color: #FFFFFF;
         height: 171rem;
 }
-
+.contenttable{
+    background-color: #FFFFFF;
+   }
 .listshopping {
-    position: absolute;
-    top: 7rem;
-    width: 666px;
-    background-color: #2C1E1E;
-    /* left: calc(100% - 500px); */
-    transition: 0.5s;
-    height: 85vh;
+    
+        position:fixed;
+     
+        width: 667px;
+        background-color: #2C1E1E;
+       
+        transition: 0.5s;
+        height: 100vh;
 }
 }
 /*Ici ton code css pour les téléphone au dessus de 600 px*/
@@ -515,423 +534,8 @@ p {
     .hamburger {
         display: none;
     }
-    a {
-        text-decoration: none;
-    }
-    
-    body {
-        background-color: #B65F28;
-    }
-    .contenttable {
-        top: 5rem;
-    }
-    .content {
+    .contenttable{
         background-color: #FFFFFF;
-        height:85rem;
-    }
-    .articleDiv:hover {
-        transform: translateY(-5px);
-    }
-    #boutiquechocolat {
-        height: auto;
-        width: 67rem;
-    }
-    
-    #boutiquechocolat h1 {
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        font-size: xxx-large;
-        font-family: 'Droid Serif';
-    }
-        .product {
-            display: block; /* Assurez-vous que tous les produits sont affichés par défaut */
-        }
-    
-        .product[style="display: none;"] {
-            display: none ; /* Cacher les produits qui ne correspondent pas aux filtres */
-        }
-        
-    
-    #produits {
         display: flex;
-        height: 30rem;
-        width: auto;
-        flex-wrap: wrap;
-    }
-    
-    .articleDiv {
-        margin: 1rem;
-        border: solid;
-        padding: 1rem;
-        border-radius: 20%;
-        background-color: #2C1E1E;
-        font-family:'Droid Serif';
-        text-align: center;
-    }
-    
-    .articleDiv h2,
-    p {
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: #FFFFFF;
-    }
-    
-    .butonajoute {
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        background-color: #FFD543;
-        border-radius: 30%;
-        height: 3rem;
-        width: 7rem;
-    
-    }
-    
-    .imageproduit {
-        width: 11rem;
-        height: auto;
-        border-radius: 20%;
-    }
-    
-    #closelist {
-        background: transparent;
-        border: transparent;
-        top: 1rem;
-        left: 1rem;
-        position: relative;
-    
-    }
-    
-    .listshopping {
-        position: absolute;
-        top: 7rem;
-        width: 500px;
-        background-color: #2C1E1E;
-        left: calc(100% - 500px);
-        transition: 0.5s;
-        height: 100vh;
-    
-    
-    }
-    
-    .headpanier {
-        background-color: #FFD543;
-    }
-    
-    
-    .headpanier h1 {
-        margin: 0rem;
-        align-items: center;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        margin: 1rem;
-    }
-    
-    .checkout {
-        background-color: #FFD543;
-        bottom: 0;
-        position: absolute;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .submitpanier,
-    .resetpanier,
-    .total {
-        margin-bottom: 1rem;
-        font-size: x-large;
-    }
-    
-    .total {
-        margin-top: 1rem;
-        font-weight: 400;
-    
-    }
-    
-    .submitpanier,
-    .resetpanier {
-        height: auto;
-    
-    }
-    
-    .reset,
-    .submit {
-        font-size: x-large;
-        font-family: 'Fjalla One';
-        background-color: #B65F28;
-    
-    }
-    #listproduit li {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-        color: #FFFFFF;
-    }
-    
-    #listproduit span {
-        color: #FFFFFF;
-        font-family: 'Fjalla One';
-    
-    }
-    
-    .quantity-input {
-        width: 50px;
-        margin: 0 10px;
-    }
-    
-    .remove-btn {
-        margin-left: 10px;
-        background-color: red;
-        color: white;
-        border: none;
-        cursor: pointer;
-        font-family: 'Fjalla One';
-    }
-    
-    
-    #header,#footer,
-    .content {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    #header-right,
-    #social-network {
-        display: flex;
-        align-items: center;
-    }
-    
-    #header-right p {
-        margin-left: 20px;
-    }
-    
-    #header img {
-        margin: 20px;
-    }
-    
-    #social-network img {
-        margin: 5px;
-    }
-    
-    #informations,
-    #contact {
-        margin: 20px;
-    }
-    
-    .menutoggle {
-        background: transparent;
-        border: transparent;
-        position: absolute;
-    }
-    
-    #panier {
-        position: relative;
-    }
-    
-    .hide {
-        visibility: hidden;
-    }
-    
-    .show {
-        visibility: visible;
-    
-    }
-    
-    #panier span {
-        background-color: red;
-        color: #FFFFFF;
-        border-radius: 50%;
-        width: 28px;
-        height: 23px;
-        text-align: center;
-        position: absolute;
-        justify-content: center;
-        bottom: 1rem;
-        left: 4rem;
-        font-size: large;
-    }
-    
-    .text-style1 {
-        font-size: 20px;
-        font-family: 'Fjalla One';
-    
-    }
-    
-    .text-style1 a {
-        color: #FFFFFF;
-    }
-    
-    .text-style21 {
-        display: inline-block;
-        font-family: 'Droid Serif';
-        padding: 10px;
-        border: 2px solid;
-        right: 42rem;
-        top: 30rem;
-        position: absolute;
-        background-color: #FFD543;
-    
-    }
-    
-    .text-style2 {
-        display: inline-block;
-        font-family: 'Droid Serif';
-        padding: 10px;
-        border: 2px solid;
-    }
-    
-    .text-style21 a {
-        color: #2C1E1E;
-        text-decoration: none;
-      
-    
-    
-    }
-    
-    .text-style2 a {
-        color: #2C1E1E;
-    }
-    
-    .text-style3 {
-        font-size: 18px;
-    }
-    
-    .text-style3,
-    .text-style4 {
-        color: #2C1E1E;
-        font-family: 'Droid Serif';
-        margin: 1rem;
-    }
-    
-    .zone-filtre {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    
-    #filter {
-        border: 2px solid;
-        border-color: #2C1E1E;
-        padding: 20px;
-    }
-    
-    .table {
-        display: table;
-        padding: 10px;
-    }
-    
-    .article {
-        display: flex;
-    }
-    
-    /* Définition d'un container pour gérer l'affichage */
-    .container {
-        overflow: hidden;
-        /* Cache les éléments qui dépassent du container */
-    }
-    /* Définition du carousel */
-    .carousel {
-        position: relative;
-        /* Le carousel est positionné relativement à son parent */
-    }
-    /* Définition de l'élément contenant les diapositives */
-    .carousel-inner {
-        display: flex;
-        /* Affiche les éléments en ligne */
-        overflow: hidden;
-        /* Cache les éléments qui dépassent */
-        height: 100vh;
-        /* Hauteur égale à 100% de la hauteur de la vue */
-        flex-wrap: nowrap;
-        /* Empêche les éléments de se placer sur plusieurs lignes */
-    }
-    /* Définition des diapositives */
-    .slide {
-        flex: 0 0 100%;
-        /* Largeur de chaque diapositive est de 100% */
-        height: 100%;
-        /* Hauteur de chaque diapositive est de 100% */
-        transition: .5s ease-in-out;
-        /* Ajout d'une animation douce pour la transition entre les diapositives */
-    }
-    /* Définition de l'affichage de l'image de chaque diapositive */
-    .slide img {
-        width: 100%;
-        /* Largeur de l'image est de 100% */
-        height: 100%;
-        /* Hauteur de l'image est de 100% */
-        object-fit: cover;
-        /* Couvre tout l'espace disponible */
-    }
-    /* Définition des boutons de contrôle du carousel */
-    .carousel-controls {
-        position: absolute;
-        /* Les boutons sont absolument positionnés */
-        z-index: 5;
-        /* Ils sont placés au-dessus des autres éléments */
-        left: 10%;
-        /* La distance à gauche est de 10% */
-        right: 10%;
-        /* La distance à droite est de 10% */
-        top: 50%;
-        /* La distance du haut est de 50% */
-        display: flex;
-        /* Affiche les boutons en ligne */
-        justify-content: space-between;
-        /* Espacement égal entre les boutons */
-    }
-    /* Style des boutons de contrôle */
-    .carousel-controls button {
-        padding: 10px;
-        /* Ajout de padding pour un meilleur contrôle */
-        background-color: aquamarine;
-        display: none;
-        /* Arrière-plan en aquamarine */
-    }
-    /* Définition des points de contrôle */
-    .carousel-dots {
-        position: absolute;
-        /* Les points sont absolument positionnés */
-        z-index: 5;
-        /* Ils sont placés au-dessus des autres éléments */
-        left: 50%;
-        /* La distance à gauche est de 50% */
-        right: 50%;
-        /* La distance à droite est de 50% */
-        bottom: 10%;
-        /*La distance du bas est de 10% */
-        display: flex;
-        /* Affiche les points en ligne */
-        justify-content: center;
-        /* Centrage des points */
-    }
-    /* Style des points de contrôle */
-    .carousel-dots .dot {
-        border-radius: 50%;
-        /* Les points sont en forme de cercle */
-        margin: 5px;
-        /* Ajout d'un margin pour un meilleur contrôle */
-        cursor: pointer;
-        /* Curseur en forme de main pour un meilleur contrôle */
-    }
-    /* Styles pour les points de navigation du carrousel */
-    .carousel-dots .active {
-        /* Border de 10px pour le point actif */
-        border: 10px solid #FFD543!important;
-        /* !important permet de surcharger les autres styles éventuels */
-    }
-    .carousel-dots .inactive {
-        /* Border de 10px pour les points inactifs */
-        border: 10px solid #2C1E1E;
-    }
-    
-    .boutiquechocolat {
-    
-        flex-direction: row;
-    }
+       }
 }
