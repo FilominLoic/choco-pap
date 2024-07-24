@@ -8,8 +8,7 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <!-- TODO: Rendre la fiche produit dynamique -->
+<body id="body">
     <!-- HEADER-->
     <div id="header">
         <div id="header-logo">
@@ -22,35 +21,56 @@
             <div class="text-style1">
                 <p><a href="boutique.html">Boutique</a></p>
             </div>
-            <div class="panier">
-                <img src="images/panier.png" alt="panier" width="70" height="70"><span>0</span>
+            <div id="panier">
+                <img src="images/panier.png" alt="panier" width="70" height="70"><span id="quantity">0</span>
             </div>
         </div>
     </div>
+    <button class="menutoggle"><img class="hamburger" src="/images/icons8-menu-64.png"
+            alt="Ouvrir ou fermer le menu" /></button>
 
     <div class="content">
         <div>
-            <img src="images/produit1.jpg" alt="produit1" width="300" height="300">
+            <img id="product-image" src="images/produit1.jpg" alt="produit1" width="300" height="300">
         </div>
         <div class="table">
-            <div class="text-style1" style="margin-top: 10px">Nom produit</div>
-            <div class="text-style3" style="margin-top: 10px">XX €</div>
-            <div class="text-style4" style="margin-top: 10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+            <div id="product-title" class="text-style1" style="margin-top: 10px">Nom produit</div>
+            <div id="product-price" class="text-style3" style="margin-top: 10px">XX €</div>
+            <div id="product-description" class="text-style4" style="margin-top: 10px">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </div>
             <input type="number" id="qte" value="1">
-            <div class="text-style2" style="margin-left: 10px; margin-top: 10px">AJOUTER AU PANIER</div>
+            <div class="butonajoute" style="margin-left: 10px; margin-top: 10px">AJOUTER AU PANIER</div>
         </div>
-    </div>
-    <div class="content table">
+ 
+    <div class="contenttable">
         <div class="text-style1">Ingrédients</div>
-        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        <div id="product-ingredients">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur.</div>
+            nulla pariatur.
+        </div>
     </div>
-
+    <div id="listshopping" class="listshopping">
+        <div class="headpanier">
+            <button id="closelist"><img class="iconclose" src="/images/icons8-close-30.png"
+                    alt="Ouvrir ou fermer le menu" /></button>
+            <h1>Panier</h1>
+        </div>
+        <div id="list"></div>
+        <ul id="listproduit"></ul>
+        <div class="checkout">
+            <div id="total">Total:<span>0</span></div>
+            <div class="resetpanier"> <button class="reset" type="reset">Réinitialiser le panier</button></div>
+            <div class="submitpanier"><button class="submit" type="submit">Valider le panier</button></div>
+        </div>
+    </div>
+</div>  
+ </div>
     <!-- FOOTER -->
     <div id="footer">
         <div id="informations">
@@ -69,7 +89,11 @@
             <div><img src="images/logo-twitter.png" width="40" height="40" alt="twitter"></div>
         </div>
     </div>
-    <script src="menu.js"></script>
+    <script src="/js/menu.js"></script>
+    <script src="js/carrousel.js" async></script>
+    <script src="/js/boutique.js"></script>
+    <script src="/js/filtre.js"async></script>
+    <script src="/js/product.js"></script>
 </body>
 
 </html>

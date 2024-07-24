@@ -6,27 +6,34 @@ function displayProduct(article) {
     let products = document.getElementById('produits');
     let articleDiv = document.createElement("div");
 
+    let link = document.createElement("a");
+    link.href = `produit.html?id=${article.id}`;
+    articleDiv.appendChild(link);
+
     let image = document.createElement("img");
     image.src = article.image;
     image.classList.add("imageproduit");
-    articleDiv.appendChild(image);
+    link.appendChild(image);
 
     let title = document.createElement("h2");
     title.innerText = article.title;
-    articleDiv.appendChild(title);
+    link.appendChild(title);
 
     let prix = document.createElement("p");
     prix.innerText = `${article.price} €`;
-    articleDiv.appendChild(prix);
+    link.appendChild(prix);
 
     let note = document.createElement("p");
     note.innerText = `Note : ${article.note}`;
-    articleDiv.appendChild(note);
+    link.appendChild(note);
 
     let ajoute = document.createElement("button");
     ajoute.classList.add("butonajoute");
     ajoute.innerText = "Ajouter dans le panier";
-    ajoute.addEventListener('click', () => addToCart(article));
+    ajoute.addEventListener('click', (event) => {
+        event.preventDefault(); // Prevents following the link when the button is clicked
+        addToCart(article);
+    });
     articleDiv.appendChild(ajoute);
 
     articleDiv.classList.add("articleDiv");
